@@ -9,5 +9,6 @@ name VARCHAR(50) NOT NULL,
 release_date INT,
 sales DECIMAL(9, 5),
 genre VARCHAR(50),
-PRIMARY KEY (id)
+PRIMARY KEY (id),
+UNIQUE (name, artist)
 );

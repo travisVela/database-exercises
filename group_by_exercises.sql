@@ -14,7 +14,8 @@ select last_name, count(last_name)
 from employees
 where last_name like '%q%'
   and last_name not like '%qu%'
-group by last_name;
+group by last_name
+order by count(last_name);
 
 -- find all first names that match criteria and group by gender and log count
 select count(first_name) as 'First name', gender
